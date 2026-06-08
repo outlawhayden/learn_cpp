@@ -30,4 +30,9 @@ int main()
 
 	double potential_profit = stock_prices::profit_on_first_uptick(valid_prices_as_vector);
 	std::cout << "Potential profit " << potential_profit << "\n";
+
+	const double required_profit = 1.75;
+
+	bool possible = stock_prices::required_profit_possible(valid_prices_as_vector, required_profit);
+	std::cout << "Required profit possible: " << possible << '\n';
 }
